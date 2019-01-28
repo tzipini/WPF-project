@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!--start of log in-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: white;
+            border: solid;
+            border-color: #4CAF50;
+            border-width: thin;
+            color: #4CAF50;
+            padding: 14px 20px;
+            display: inline-block;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 100%;
+            position: center;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.avatar {
+            width: 20%;
+            border-radius: 30%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 1% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+
+        /* Add Zoom Animation */
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+
+        /*style of sign up*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+            /* Add a background color when the inputs get focus */
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: white;
+                outline: none;
+            }
+
+
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container2 {
+            padding: 16px;
+        }
+
+
+
+
+
+        /* Style the horizontal ruler */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #f44336;
+                cursor: pointer;
+            }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+    <!--end of log in-->
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>APPetite</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="login.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <!--start of log in -->
+    <button class="w3-btn w3-blue" id ="loginBtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img/login.jpg" alt="LogIn" class="avatar">
+            </div>
+
+            <div class="container">
+                <label class="w3-text-blue" for="uname"><b>Username</b></label>
+                <input class="w3-text-blue" type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+                <label class="w3-text-blue" id = "pass" for="psw"><b>Password</b></label>
+                <input class="w3-input w3-border" name="pass" id="upass" type="password" placeholder="Enter Password" required>
+
+                <button class="w3-btn w3-blue" id="loginForm" onclick="CheckMember(uname, psw)" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p>Don't have an account?</p>
+                <button class="w3-btn w3-blue" id="regBtn" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" style="width:auto;">Sign In</button>
+
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <!-------------------------end of log in------------------------->
+
+    <!-------------------------start of Sign In------------------------->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal2-content" action="/action_page.php">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" href="index.html" class="cancelbtn">Cancel</button>
+                    <button type="submit" href="index.html" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-----------------end of Sign In------------------>
+    <script>
+
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="main-wrapper-first">
+        <header>
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <div class="main-menubar d-flex align-items-center">
+                            <nav class="hide">
+                                <a href="index.html">Welcome</a>
+                                <a href="generic.html">My Goals</a>
+                                <a href="todayMeal.html">My Meals</a>
+                                <a href="elements.html">My Zone</a>
+                            </nav>
+                            <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main-wrapper">
+        <div class="banner-area">
+            <div class="container">
+                <div class="row height justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                        <div class="banner-content">
+                            <h1>Everything <br>You can imagine <br>is Inmotion</h1>
+                            <p class="text-white">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="banner-video">
+                            <div class="overlay overlay-bg"></div>
+                            <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <!-- Start Feature Area -->
+        <section class="featured-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+                            <span class="lnr lnr-apple"></span>
+                            <h3> Be Sure to Get Sleep</h3>
+
+                            
+                            <p>Even though most of us have eight-hour jobs during the day or night, it is crucial to get enough sleep to recharge the body's batteries.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+                            <span class="lnr lnr-code"></span>
+                            <h3>Stay Motivated</h3>
+                            <p>
+                                An important key to being in shape is to set goals and keep a positive mindset. If you stay positive, you will be able to push yourself to get that fit body you've always wanted.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+                            <span class="lnr lnr-clock"></span>
+                            <h3>Have Hearty Breakfast</h3>
+                            <p>By now you’re probably tired of hearing how breakfast is the most important meal of the day—but this tired piece of advice couldn’t be more true!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Feature Area -->
+      
+   
+        <!-- Start Contact Area -->
+        <section class="section-gap contact-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="contact-address">
+                            <div class="single-address d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-pushpin"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Address</h5>
+                                    <p>56/8, panthapath, west dhanmondi, kalabagan, <br> Dhaka - 1205, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="single-address mt-30 d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-earth"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Email Address</h5>
+                                    <a href="mailto:demo@gmail.com">michallevmail@gmail.com‏</a> <br>
+                                    <a href="mailto:demo@gmail.com">efrat498@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="single-address mt-30 d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-phone"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Phone Number</h5>
+                                    <a href="tel:1254758">Michal 0523332814</a> <br>
+                                    <a href="tel:1254758">Efrat 0523791560</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ml-auto col-md-7">
+                        <form id="myForm" method="post" class="contact-form text-right">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="primary-btn white-bg d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
+                                    <div class="alert-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Contact Area -->
+        <section class="subscription-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="subscribe-content">
+                            <h3 class="text-white">Subscribe for our Newsletter</h3>
+                            <p class="text-white mb-0">We won’t send any kind of spam</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="mc_embed_signup">
+                            <form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative">
+                                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+                                </div>
+                                <button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></button>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Subscription Area -->
+      
+    </div>
+
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+</body>
+</html>

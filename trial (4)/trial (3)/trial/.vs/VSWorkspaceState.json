@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\inmotion-colorlib",
+    "\\public\\inmotion-colorlib\\inmotion",
+    "\\public\\inmotion-colorlib\\inmotion\\css",
+    "\\public\\inmotion-colorlib\\inmotion\\js",
+    "\\public\\inmotion-colorlib\\inmotion\\js\\vendor",
+    "\\views",
+    "\\views\\pages",
+    "\\views\\partials"
+  ],
+  "SelectedNode": "\\server.js",
+  "PreviewInSolutionExplorer": false
+}

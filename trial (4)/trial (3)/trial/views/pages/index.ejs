@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<% include ../partials/head.ejs%>
+	<script>
+		function getLogIn(){
+			let username=document.getElementById('uname').value;
+			let password=document.getElementById('upass').value;
+			var obj='{"username": "'+username+'", "password": "'+password+'"}';
+			$.ajax({
+				url: 'findUser/'+obj,
+				type: 'POST',
+				contentType:'application/json',
+				success: alert('user inserted successfully')
+			})
+		}
+	</script>
+</head>
+
+<body >
+<div id="maindiv" style="width:800px; height:20px;">
+
+    <div id="loginDiv" style="float: left; width: 80px"> 
+		<form action="/LogIn.html">
+			<button id="loginbtn" style="width:auto;"><b>Login</b></button>
+	    </form>
+	</div>
+	 <div id="signupDiv" style="float: left; width: 200px">
+	<form action="/signUp.html">
+       <button id="signupbtn" style="width:auto;"><b>Sign Up</b></button>
+    </form>
+	</div>
+</div>
+
+    <div class="main-wrapper-first">
+	<header>
+	<% include ../partials/header.ejs%>
+	</header>
+</div> 
+
+<div class="main-wrapper">
+        <div class="banner-area">
+            <div class="container">
+                <div class="row height justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                        <div class="banner-content">
+
+                            <h1>DON'T WISH FOR IT. <br>WORK FOR IT.<br></h1>
+                            <p class="text-white">
+Congratulations on taking a forward step to get in shape and feel great. Many people are guilty of wishing they could get a sculpted body from eating junk food and watching TV all day. But that is just not going to happen. Even though getting in shape sounds like a long, time-wasting process, the effort put towards being in shape has many positive effects. If you want to start your journey to having a better body to feel great, here are some </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+						<div class="banner-video">
+                            <div class="overlay overlay-bg"></div>
+								 <a href="https://www.youtube.com/watch?v=BjqDttuEmiw" class="play-btn"><img src="inmotion-colorlib/inmotion/img/play-btn.png" alt=""></a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="main-wrapper">
+        <!-- Start Feature Area -->
+        <section class="featured-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+								<img src="inmotion-colorlib/inmotion/img/bed.png"  class="row" align="middle" style="margin:10px 40px 40px 80px">
+								<bl>
+					
+                            <h3> Be Sure to Get Sleep</h3>
+
+                            
+                            <p>Even though most of us have eight-hour jobs during the day or night, it is crucial to get enough sleep to recharge the body's batteries.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+                            <img src="inmotion-colorlib/inmotion/img/muscles.png"  class="row" align="middle" style="margin:10px 40px 40px 80px">
+                            <h3>Stay Motivated</h3>
+                            <p>
+                                An important key to being in shape is to set goals and keep a positive mindset. If you stay positive, you will be able to push yourself to get that fit body you've always wanted.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-feature text-center">
+                            <img src="inmotion-colorlib/inmotion/img/breakfast.png"  class="row" align="middle" style="margin:10px 40px 40px 80px">
+                            <h3>Have Hearty Breakfast</h3>
+                            <p>By now youre probably tired of hearing how breakfast is the most important meal of the day, but this tired piece of advice couldnt be more true!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Feature Area -->
+      
+   
+        <!-- Start Contact Area -->
+        <section class="section-gap contact-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="contact-address">
+                            <div class="single-address d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-pushpin"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Address</h5>
+                                    <p>56/8, panthapath, west dhanmondi, kalabagan, <br> Dhaka - 1205, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="single-address mt-30 d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-earth"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Email Address</h5>
+                                    <a href="mailto:demo@gmail.com">michallevmail@gmail.comþ</a> <br>
+                                    <a href="mailto:demo@gmail.com">efrat498@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="single-address mt-30 d-flex">
+                                <div class="icon">
+                                    <span class="lnr lnr-phone"></span>
+                                </div>
+                                <div class="desc">
+                                    <h5>Phone Number</h5>
+                                    <a href="tel:1254758">Michal 0523332814</a> <br>
+                                    <a href="tel:1254758">Efrat 0523791560</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ml-auto col-md-7">
+                        <form id="myForm2" method="post" class="contact-form text-right">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="primary-btn white-bg d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="
+									-arrow-right"></span></button> <br>
+                                    <div class="alert-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Contact Area -->
+        <section class="subscription-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="subscribe-content">
+                            <h3 class="text-white">Subscribe for our Newsletter</h3>
+                            <p class="text-white mb-0">We won’t send any kind of spam</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="mc_embed_signup">
+                            <form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative">
+                                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+                                </div>
+                                <button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></button>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Subscription Area -->
+
+      
+    </div>
+	
+	
+</body>
+</html>
